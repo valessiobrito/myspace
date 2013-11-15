@@ -15,7 +15,7 @@ elgg_load_css('css');
 
 <div class="login">
 	<p class="login-welcome">
-		Welcome to MySpace
+		Bem vindo a Jaco & Bina
 	</p>
 	<ul>
 		<li class="login-left">
@@ -29,19 +29,22 @@ elgg_load_css('css');
 				<input type="hidden" name="__elgg_ts" value="<?php echo $ts;?>" />
 
 				<p> 
-					<input id="username" name="username" required="required" type="text" placeholder="Username or email"/>
+					<input id="username" name="username" required="required" type="text" placeholder="Usuário ou email"/>
 				</p>
                                
 				<p>
-					<input id="password" name="password" required="required" type="password" placeholder="Password" /> 
+					<input id="password" name="password" required="required" type="password" placeholder="Senha" /> 
 				</p>
 
 				<p>
-					<input type="submit" value="Login" class="elgg-button elgg-button-submit" action="action/login" value="Login" /> 
+					<input type="submit" value="Login" class="elgg-button elgg-button-submit" action="action/login" value="Logar" /> 
 				</p>
 	
 				<p> 
-					<a href="forgotpassword">Forgot password?</a> | <a href="register" class="to_register">Join us</a> | <a href="<?php echo elgg_get_site_url() . 'terms'?>">Terms</a> | <a href="<?php echo elgg_get_site_url() . 'privacy'?>">Privacy</a>
+					<a href="forgotpassword">Esqueceu a senha?</a> | 
+					<a href="register" class="to_register">Registre-se!</a> | 
+					<a href="<?php echo elgg_get_site_url() . 'terms'?>">Termo de uso</a> | 
+					<a href="<?php echo elgg_get_site_url() . 'privacy'?>">Privacidade</a>
 				</p>
 
 			</form>
