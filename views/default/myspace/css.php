@@ -108,7 +108,12 @@ body {
 	width: 100%;
 	height: 60px;
 	z-index: 10;
-	border: 0;
+    border: 0;
+    transition: 0.5s;
+}
+
+.elgg-page-topbar:hover {
+        bottom: 0;
 }
 
 .elgg-menu-topbar > li > a.elgg-topbar-logo {
