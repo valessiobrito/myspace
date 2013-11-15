@@ -149,7 +149,7 @@
 
 .elgg-river-attachments {
 	border: 0;
-	margin-top: 35px;
+	margin-top: 10px;
 	font-size: 130%;
 	margin-right: 3px;
 	background: white;
@@ -165,6 +165,28 @@
 	overflow: visible;
 	margin-left: 0px;
 	margin-right: 10px;
+}
+
+.elgg-avatar-small > a > img {
+	width: 16px;
+	height: 16px;
+	background-size: 100% !important;
+	border-radius: 2px;
+}
+
+.elgg-avatar-small:hover > a > img {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	border: 3px solid #FFF;
+	position: absolute;
+	margin-top: -20px;
+}
+
+.elgg-avatar-small > span.elgg-icon-hover-menu {
+	left: 30px;
+	top: -20px;
+	z-index: 10000;
 }
 
 .elgg-avatar-large > a > img {
