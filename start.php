@@ -53,6 +53,10 @@ function myspace_init() {
 	elgg_register_js('jquery.main', 'mod/myspace/js/main.js');
 	elgg_load_js('jquery.main');
 
+    // load the custom js
+	elgg_register_js('jquery.custom', 'mod/myspace/js/custom.js');
+	elgg_load_js('jquery.custom');
+
 	// no side scroll for admin and other pages
 	if( elgg_get_context() == 'admin' ||
 		fnmatch($elgg . 'forgotpassword', $url) || fnmatch($elgg . 'register', $url)
