@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
     $('a[href*="avatar/edit"]').addClass('profile-owner-avatar');
@@ -25,9 +24,9 @@ $(document).ready(function() {
 	$.expr[':'].external = function(obj){
     return !obj.href.match(/^mailto\:/)
             && (obj.hostname != location.hostname);
-};
+    };
 
-$('a:external').attr('target', '_blank');
+    $('a:external').attr('target', '_blank');
     //$('.elgg-list-annotation > li').append($('.elgg-list-river'));
     //$('.elgg-list-river').append($('.elgg-list-annotation > li'));
 
@@ -36,10 +35,10 @@ $('a:external').attr('target', '_blank');
     //$('#profile-details').append($('.elgg-page-default'));
    //var $aboutme = $('.profile-aboutme');
    //if ($aboutme.text().length >= 200) { $aboutme.css({fontSize:15}); }
-   
+
    function sortEm(a,b){ return parseInt($('acronym', a).text()) > parseInt($('acronym', b).text()) ? 1 : -1;}
    $('.elgg-list-river > li').sort(sortEm).prependTo($('.elgg-list-river'));
-   
 
+   $('.messageboard-input').attr("placeholder", "What have you been up to?");
 
 });

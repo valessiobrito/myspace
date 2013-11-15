@@ -195,10 +195,17 @@
 }
 
 .messageboard-input {
-    height: 100px;
+    height: 29px;
     width: 290px;
     margin-left: 20px;
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.messageboard-input:active,
+.messageboard-input:focus,
+.messageboard-input:hover {
+    height: 100px;
 }
 
 .profile-friends {
